@@ -13,7 +13,20 @@
 		48B7F7131C340724009BFC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B7F7111C340724009BFC45 /* Main.storyboard */; };
 		48B7F7151C340724009BFC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B7F7141C340724009BFC45 /* Assets.xcassets */; };
 		48B7F7181C340724009BFC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B7F7161C340724009BFC45 /* LaunchScreen.storyboard */; };
+		48B7F7211C3407B8009BFC45 /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F7201C3407B8009BFC45 /* SwipeView.m */; };
+		48B7F7291C340ADD009BFC45 /* Gesture_TestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F7281C340ADD009BFC45 /* Gesture_TestingTests.m */; };
+		48B7F7311C340AEE009BFC45 /* SwipeViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F7301C340AEE009BFC45 /* SwipeViewTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48B7F72B1C340ADD009BFC45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48B7F6FD1C340723009BFC45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48B7F7041C340723009BFC45;
+			remoteInfo = "Gesture Testing";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		48B7F7051C340723009BFC45 /* Gesture Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gesture Testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +39,23 @@
 		48B7F7141C340724009BFC45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B7F7171C340724009BFC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48B7F7191C340724009BFC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B7F71F1C3407B8009BFC45 /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
+		48B7F7201C3407B8009BFC45 /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
+		48B7F7261C340ADD009BFC45 /* Gesture TestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gesture TestingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B7F7281C340ADD009BFC45 /* Gesture_TestingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Gesture_TestingTests.m; sourceTree = "<group>"; };
+		48B7F72A1C340ADD009BFC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B7F7301C340AEE009BFC45 /* SwipeViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		48B7F7021C340723009BFC45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B7F7231C340ADD009BFC45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				48B7F7071C340723009BFC45 /* Gesture Testing */,
+				48B7F7271C340ADD009BFC45 /* Gesture TestingTests */,
 				48B7F7061C340723009BFC45 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				48B7F7051C340723009BFC45 /* Gesture Testing.app */,
+				48B7F7261C340ADD009BFC45 /* Gesture TestingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +95,8 @@
 				48B7F7161C340724009BFC45 /* LaunchScreen.storyboard */,
 				48B7F7191C340724009BFC45 /* Info.plist */,
 				48B7F7081C340723009BFC45 /* Supporting Files */,
+				48B7F71F1C3407B8009BFC45 /* SwipeView.h */,
+				48B7F7201C3407B8009BFC45 /* SwipeView.m */,
 			);
 			path = "Gesture Testing";
 			sourceTree = "<group>";
@@ -77,6 +107,16 @@
 				48B7F7091C340723009BFC45 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48B7F7271C340ADD009BFC45 /* Gesture TestingTests */ = {
+			isa = PBXGroup;
+			children = (
+				48B7F7281C340ADD009BFC45 /* Gesture_TestingTests.m */,
+				48B7F7301C340AEE009BFC45 /* SwipeViewTests.m */,
+				48B7F72A1C340ADD009BFC45 /* Info.plist */,
+			);
+			path = "Gesture TestingTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +139,24 @@
 			productReference = 48B7F7051C340723009BFC45 /* Gesture Testing.app */;
 			productType = "com.apple.product-type.application";
 		};
+		48B7F7251C340ADD009BFC45 /* Gesture TestingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B7F72D1C340ADD009BFC45 /* Build configuration list for PBXNativeTarget "Gesture TestingTests" */;
+			buildPhases = (
+				48B7F7221C340ADD009BFC45 /* Sources */,
+				48B7F7231C340ADD009BFC45 /* Frameworks */,
+				48B7F7241C340ADD009BFC45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48B7F72C1C340ADD009BFC45 /* PBXTargetDependency */,
+			);
+			name = "Gesture TestingTests";
+			productName = "Gesture TestingTests";
+			productReference = 48B7F7261C340ADD009BFC45 /* Gesture TestingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,6 +168,10 @@
 				TargetAttributes = {
 					48B7F7041C340723009BFC45 = {
 						CreatedOnToolsVersion = 7.2;
+					};
+					48B7F7251C340ADD009BFC45 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 48B7F7041C340723009BFC45;
 					};
 				};
 			};
@@ -127,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				48B7F7041C340723009BFC45 /* Gesture Testing */,
+				48B7F7251C340ADD009BFC45 /* Gesture TestingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +205,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		48B7F7241C340ADD009BFC45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -150,12 +220,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B7F7101C340724009BFC45 /* ViewController.m in Sources */,
+				48B7F7211C3407B8009BFC45 /* SwipeView.m in Sources */,
 				48B7F70D1C340724009BFC45 /* AppDelegate.m in Sources */,
 				48B7F70A1C340723009BFC45 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		48B7F7221C340ADD009BFC45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B7F7291C340ADD009BFC45 /* Gesture_TestingTests.m in Sources */,
+				48B7F7311C340AEE009BFC45 /* SwipeViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48B7F72C1C340ADD009BFC45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48B7F7041C340723009BFC45 /* Gesture Testing */;
+			targetProxy = 48B7F72B1C340ADD009BFC45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		48B7F7111C340724009BFC45 /* Main.storyboard */ = {
@@ -281,6 +369,30 @@
 			};
 			name = Release;
 		};
+		48B7F72E1C340ADD009BFC45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Gesture TestingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.Gesture-TestingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gesture Testing.app/Gesture Testing";
+			};
+			name = Debug;
+		};
+		48B7F72F1C340ADD009BFC45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Gesture TestingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.Gesture-TestingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gesture Testing.app/Gesture Testing";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +410,14 @@
 			buildConfigurations = (
 				48B7F71D1C340724009BFC45 /* Debug */,
 				48B7F71E1C340724009BFC45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		48B7F72D1C340ADD009BFC45 /* Build configuration list for PBXNativeTarget "Gesture TestingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B7F72E1C340ADD009BFC45 /* Debug */,
+				48B7F72F1C340ADD009BFC45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

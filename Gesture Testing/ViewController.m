@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "SwipeView.h"
 
-@interface ViewController ()
+@interface ViewController () <SwipeViewDelegate>
+
+@property (nonatomic, weak) IBOutlet SwipeView *swipeView;
 
 @end
 
@@ -16,12 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.swipeView.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - SwipeViewDelegate
+- (void)swipeViewDidSwipe:(SwipeView *)swipeView {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
 }
 
 @end
